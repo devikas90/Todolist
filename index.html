@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <style>
+       body{
+           background-size: cover;
+       }
+        .d1{
+
+            border: 2px solid rgb(124, 103, 199);
+            background-color: #8a288d;
+            margin:90px;
+            padding: 3px;
+            margin-right: 33%;
+            margin-left: 33%;
+            padding: 10px;
+        }
+        
+                
+  input[type=submit] {
+     background-color: #04AA6D;
+                 color: white;
+                 padding: 12px;
+                 border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                 float: center;
+                        }
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+             .row:after {
+                 content: "";
+                 display: table;
+                    clear: both;
+                  }
+                  h2 {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+.uname{
+    color: azure;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+    </style>
+   
+
+</head>
+    
+    <body background="/images/index4.jpg">
+        
+        
+        <div class="d1">
+            <center><h2 >Please Login</h2></center>
+        
+            <form  onsubmit="return validate(display)" >  
+            
+                <div id="uname" class="col-25">
+                    <label for="uname" class="s1" id="uname">User Name</label>
+                    <input type="text" class="s2" id="uid" placeholder="Enter Userid" onkeyup="uidCheck()">
+                     <label id="emaillabel"></label><br><br>
+              </div>
+              <div class="col-25" >
+                <label for="uname" class="s1">Password</label>&nbsp;&nbsp;&nbsp;
+                <input type="password"  class="s2" id="pwd" name="pwd" placeholder="Enter Password" onkeyup="pwdCheck()">
+                <label id="pwdlabel"></label>
+         <!-- <label for="pwd">Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          
+            <input type="password" id="pwd" name="pwd" placeholder="Enter Password">
+              -->
+            <br></div>
+            <br>
+            <div class="row">
+               <center> <button type="submit" class="btn">Login</button></center>
+              </div>
+        </form>
+    </div>
+    <script src="login.js"></script>
+    </body>
+    </html>
